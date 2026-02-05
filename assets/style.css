@@ -1,4 +1,24 @@
 :root {
+
+	/*======== SIZES ========*/
+		--size-0: 8px;
+		--size-1: 16px;
+		--size-2: 24px;
+		--size-3: 32px;
+		--size-4: 48px;
+		--size-5: 64px;
+		--size-6: 80px;
+		--size-7: 96px;
+		--size-8: 112px;
+		--size-9: 144px;
+		--size-10: 160px;
+
+	/*======== COLORS ========*/
+
+	/*======== FONTS ========*/
+	--font-1: "gotham", sans-serif;
+	--font-2: "forma-djr-mono", sans-serif;
+
 	/* ========== NAV LAYOUT ========== */
 	--nav-max: 1200px;
 	--nav-pad-x: 24px;
@@ -14,8 +34,11 @@
 	--bg: #fff;
 }
 
-html,
-body {
+html{
+	scroll-behavior: smooth;
+}
+
+html, body {
 	height: 100%;
 }
 
