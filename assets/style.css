@@ -111,6 +111,22 @@ a:focus-visible {
 	border-radius: 6px;
 }
 
+.hero {
+	max-width: var(--nav-max);
+	margin: 0 auto;
+	padding: 48px var(--nav-pad-x) 24px;
+}
+
+.hero-title {
+	margin: 0;
+	font-size: clamp(64px, 14vw, 180px);
+	line-height: 0.9;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	color: currentColor;
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 720px) {
 	.site-nav {
@@ -125,5 +141,13 @@ a:focus-visible {
 	  justify-content: center;
 	  gap: 16px;
 	  flex-wrap: wrap;
+	}
+
+	.hero {
+		padding-top: 32px;
+	}
+	
+	.hero-title {
+		letter-spacing: -0.01em;
 	}
 }
