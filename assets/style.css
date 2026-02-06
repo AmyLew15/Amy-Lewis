@@ -137,6 +137,42 @@ body.is-scrolled .hero-title {
 	letter-spacing: -0.02em;
 }
 
+main {
+	max-width: var(--nav-max);
+	margin: 0 auto;
+	padding: var(--size-5) var(--nav-pad-x) var(--size-7);
+}
+
+main p {
+	max-width: 70ch;
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+footer {
+	margin: 0 auto;
+	padding: var(--size-4) var(--nav-pad-x) var(--size-4);
+	border-top: 1px solid var(--color-gray);
+}
+
+footer h3 {
+	margin-bottom: var(--size-0);
+	font-size: var(--size-1);
+	font-weight: 600;
+	color: var(--color-blue);
+}
+
+footer p {
+	margin: 0;
+	font-family: var(--font-2);
+	font-size: calc(1.5*var(--size-0));
+}
+
+footer p + p {
+	margin-top: var(--size-0);
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 720px) {
 	.site-nav {
