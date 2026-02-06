@@ -74,9 +74,9 @@ a:focus-visible {
 .site-nav {
 	position: fixed;
 	top: var(--size-2);
-	right: var(--size-2);
+	left: var(--size-2);
 	justify-content: center;
-	gap: 16px;
+	gap: var(--size-1);
 	z-index: 100;
 	pointer-events: auto;
 }
@@ -100,6 +100,7 @@ a:focus-visible {
 	position: relative;
 	font-size: var(--nav-size);
 	letter-spacing: var(--nav-letter);
+	white-space: nowrap;
 	padding: 10px 14px;
 	backdrop-filter: blur(10px);
 	transition: 180ms ease, border-color 180ms ease, transform 180ms ease;
@@ -144,27 +145,31 @@ body.is-scrolled .hero-title {
 /* ========== RESPONSIVE ========== */
 @media (max-width: 720px) {
 	.site-nav {
-		justify-content: center;
 		top: var(--size-1);
-		right: var(--size-1);
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.nav-links {
-		justify-content: flex-end;
-		flex-wrap: wrap;
-		gap: var(--size-0);
-		max-width: calc(100vw - (2* var(--size-1)));
-	}
-
-	.nav-link {
-		padding: 9px 12px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		gap: var(--size-1);
 	}
 
 	.hero {
-		padding-top: var(--size-7);
+		max-width: none;
+		margin: 0;
+		padding-left: var(--size-1);
+		padding-right: var(size---1);
+		padding-top: var(--size-6);
+		text-align: center;
 	}
 	
 	.hero-title {
+		width: 100%;
+		margin-top: var(--size-2);
 		letter-spacing: -0.03em;
 	}
 }
