@@ -29,8 +29,8 @@
 
 	/* ========== NAV LAYOUT ========== */
 	--nav-max: 1200px;
-	--nav-pad-x: var(--size-2);
-	--nav-pad-y: calc(1.5*var(--size-2));
+	--nav-pad-x: var(--size-1);
+	--nav-pad-y: var(--size-1);
 	--nav-size: 14px;
 	--nav-letter: 0.02em;
 }
@@ -56,12 +56,6 @@ a {
 	text-decoration: none;
 }
 
-a:focus-visible {
-	outline: 2px solid currentColor;
-	outline-offset: 4px;
-	border-radius: 6px;
-}
-
 /* ========== HEADER + NAV ========== */
 .site-header {
 	position: sticky;
@@ -73,8 +67,8 @@ a:focus-visible {
 
 .site-nav {
 	position: fixed;
-	top: var(--size-2);
-	left: var(--size-2);
+	top: var(--size-1);
+	left: var(--size-1);
 	justify-content: center;
 	gap: var(--size-1);
 	z-index: 100;
@@ -83,6 +77,7 @@ a:focus-visible {
 
 .nav-links {
 	color: var(--color-blue);
+	font-weight: 400;
 	display: flex;
 	align-items: center;
 	gap: var(--size-0);
@@ -93,7 +88,7 @@ a:focus-visible {
 
 .nav-link {
 	background-color: var(--color-light-gray);
-	border-radius: var(--size-1);
+	border-radius: var(--size-0);
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
