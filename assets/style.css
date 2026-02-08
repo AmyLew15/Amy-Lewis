@@ -21,6 +21,7 @@
 	--color-yellow:#f2ebd0;
 	--color-light-gray:#e3e2dd;
 	--color-gray: #c3c1b8;
+	--color-drak-gray: #938680;
 	--color-blue: #2200ff;
 
 	/*=============== FONTS ===============*/
@@ -89,6 +90,7 @@ a {
 .nav-link {
 	background-color: var(--color-light-gray);
 	border-radius: var(--size-0);
+	border: .5px solid var(--color-drak-gray);
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -121,19 +123,21 @@ a {
 	font-family: var(--font-1);
 	font-size: clamp(88px, 18vw, 240px);
 	font-weight: 800;
-	line-height: 0.85;
+	text-wrap: nowrap;
 	letter-spacing: -.05em;
 	margin: 0;
 	text-transform: uppercase;
 	position: sticky;
 	top: var(--size-2);
+	z-index: 10;
 	transform-origin: top center;
 	transition: transform 220ms ease, letter-spacing 220ms ease;
 	letter-spacing: -0.04em;
 }
 
 body.is-scrolled .hero-title {
-	transform: scale(0.38);
+	transform: scale(0.2);
+	top: (var(--size-1));
 	letter-spacing: -0.02em;
 }
 
@@ -143,11 +147,19 @@ main {
 	padding: var(--size-5) var(--nav-pad-x) var(--size-7);
 }
 
-main p {
+.intro-grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: var(--size-2);
+	padding: var(--size-4) 0 var(--size-7);
+}
+
+.intro{
 	max-width: 70ch;
 	margin: 0;
-	font-size: 16px;
+	font-size: var(--size-1);
 	line-height: 1.6;
+	grid-column: 1 / span 7;
 }
 
 footer {
@@ -167,10 +179,11 @@ footer p {
 	margin: 0;
 	font-family: var(--font-2);
 	font-size: calc(1.5*var(--size-0));
+	font-weight: 500;
 }
 
 footer p + p {
-	margin-top: var(--size-0);
+	margin-top: calc(.5*var(--size-0));
 }
 
 /* ========== RESPONSIVE ========== */
@@ -202,5 +215,13 @@ footer p + p {
 		width: 100%;
 		margin-top: var(--size-2);
 		letter-spacing: -0.03em;
+	}
+
+	.intro-grid{
+		padding-top: var(--size-3);
+	}
+
+	.intro{
+		text-align: left;
 	}
 }
