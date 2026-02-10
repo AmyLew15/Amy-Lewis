@@ -111,11 +111,12 @@ body {
 	color: var(--color-blue);
 	text-wrap: nowrap;
 	text-transform: uppercase;
+	text-align: center;
 	margin: 0;
 	position: sticky;
 	top: calc(var(--size-1) + var(--size-4));
 	z-index: 10;
-	transform-origin: top center;
+	transform-origin: top left;
 	transition: transform 220ms ease, letter-spacing 220ms ease;
 }
 
