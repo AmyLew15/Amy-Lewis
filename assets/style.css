@@ -116,7 +116,6 @@ body {
 
 /* ========== INTRO ========== */
 .intro-container{
-	padding-top: var(--size-6);
 	padding-bottom: var(--size-2);
 	min-height: 100vh;
 	display: flex;
@@ -132,21 +131,34 @@ body {
 	max-width: 75ch;
 }
 
-p.intro-paragraph{
+.intro-paragraph{
 	font-size: var(--size-1);
 	line-height: 1.6;
 	color: var(--color-black);
-	margin: 0 auto;
+	margin: 0;
 	position: relative;
-	width: 100%;
-}
-
-details{
 	display: inline;
+	margin: 0;
+	width: 100%;
+	padding-right: 0.25rem;
 }
 
 .intro-reveal{
+	white-space: nowrap;
 	display: inline;
+	margin: 0;
+	vertical-align: baseline;
+}
+
+.intro-reveal summary {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.intro-reveal summary::-webkit-details-marker {
+	display: none;
 }
 
 .intro-short{
