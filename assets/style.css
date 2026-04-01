@@ -40,17 +40,16 @@ body {
 	background: var(--color-light-gray);
 }
 
+main{
+	padding-top: 70vh;
+}
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	gap: var(--size-1);
-}
-
-section {
-	padding-top: var(--size-4);
-	padding-bottom: var(--size-4);
 }
 
 /* ========== NAV ========== */
@@ -62,7 +61,7 @@ section {
 	right: 0;
 	z-index: 200;
 	padding-inline: var(--size-1);
-	padding-bottom: var(--size-0);
+	padding-bottom: 0;
 }
 
 .site-nav{
@@ -127,10 +126,9 @@ section {
 
 /* ========== INTRO ========== */
 .intro-container{
-	padding-bottom: var(--size-2);
-	min-height: 100vh;
-	display: flex;
-	align-items: flex-end;
+	padding-bottom: var(--size-3);
+	min-height: auto;
+	display: block;
 }
 
 .intro{
@@ -139,7 +137,7 @@ section {
 	line-height: 1.6;
 	color: var(--color-black);
 	margin: 0;
-	max-width: 75ch;
+	max-width: 32ch;
 }
 
 .intro-paragraph{
@@ -149,8 +147,6 @@ section {
 	margin: 0;
 	position: relative;
 	display: inline;
-	margin: 0;
-	width: 100%;
 	padding-right: 0.25rem;
 }
 
@@ -159,6 +155,7 @@ section {
 	display: inline;
 	margin: 0;
 	vertical-align: baseline;
+	position: relative;
 }
 
 .intro-reveal summary {
@@ -177,8 +174,7 @@ section {
 	font-size: var(--size-1);
 	font-weight: 500;
 	background: var(--color-beige);
-	padding-left: calc(.5*var(--size-0));
-	padding-right: calc(.5*var(--size-0));
+	padding-inline: 6px;
 	display: inline-block;
 	cursor: pointer;
 	user-select: none;
@@ -194,7 +190,7 @@ section {
 	color: var(--color-beige);
 	background: var(--color-blue);
 	text-wrap: balance;
-	padding: var(--size-1);
+	padding: var(--size-0);
 	position: fixed;
 	z-index: 50;
 	left: 50%;
