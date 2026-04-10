@@ -1,0 +1,52 @@
+/* ========== BALLOT HERO ========== */
+.project-page {
+	margin-top: var(--header-height);
+	padding: var(--size-1);
+}
+
+.project-hero {
+	padding-top: var(--size-3);
+}
+
+.project-title {
+	font-family: var(--font-1);
+	font-size: var(--size-4);
+	font-weight: 600;
+	color: var(--color-blue);
+	margin-bottom: var(--size-1);
+}
+
+.case-close {
+	font-family: var(--font-2);
+	font-size: var(--size-1);
+	font-weight: 500;
+	color: var(--color-blue);
+	background: var(--color-beige);
+	padding: var(--size-0);
+	border-radius: var(--size-0);
+	text-decoration: none;
+	align-self: flex-start;
+}
+
+.project-intro {
+	font-size: var(--size-1);
+	line-height: 1.6;
+	max-width: 34ch;
+}
+
+.project-heading {
+	font-family: var(--font-2);
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--color-drak-gray);
+	margin: var(--size-1) 0 0;
+}
+
+.project-section {
+	padding-top: var(--size-3);
+}
+
+.project-section h2 {
+	font-size: var(--size-2);
+	margin-bottom: var(--size-1);
+}
