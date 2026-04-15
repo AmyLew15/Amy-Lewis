@@ -1,19 +1,24 @@
-/* ========== BALLOT HERO ========== */
+/* ========== PRIMARY HERO ========== */
 .project-page {
-	margin-top: var(--header-height);
-	padding: var(--size-1);
+	padding: calc(var(--header-height) + var(--size-1)) var(--size-1) var(--size-1);
 }
 
-.project-hero {
-	padding-top: var(--size-3);
+.project-head {
+	padding: var(--size-1) 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: var(--size-1);
+	border-bottom: 2px solid var(--color-gray);
 }
 
 .project-title {
 	font-family: var(--font-1);
-	font-size: var(--size-4);
+	font-size: var(--size-3);
 	font-weight: 600;
-	color: var(--color-blue);
-	margin-bottom: var(--size-1);
+	line-height: 1;
+	color: var(--color-black);
+	margin: 0;
 }
 
 .case-close {
@@ -25,28 +30,71 @@
 	padding: var(--size-0);
 	border-radius: var(--size-0);
 	text-decoration: none;
-	align-self: flex-start;
+	white-space: nowrap;
 }
 
 .project-intro {
-	font-size: var(--size-1);
-	line-height: 1.6;
-	max-width: 34ch;
+	padding: 0;
 }
 
-.project-heading {
+.project-intro p {
+	font-size: var(--size-1);
+	line-height: 1.6;
+	max-width: 32ch;
+	margin: 0;
+}
+
+.project-meta {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0,1fr));
+	gap: var(--size-1);
+	padding: var(--size-1) 0;
+	align-items: start;
+}
+
+.project-meta p {
+	margin: 0;
+	line-height: 1.4;
+}
+
+.meta-item {
+	display: grid;
+	gap: 4px;
+	align-content: start;
+	justify-items: start;
+	text-align: left;
+}
+
+.project-subhead {
 	font-family: var(--font-2);
-	font-size: 14px;
+	font-size: var(--nav-size);
 	font-weight: 500;
 	color: var(--color-drak-gray);
 	margin: var(--size-1) 0 0;
 }
 
+/* ========== PROJECT DETAILS ========== */
 .project-section {
-	padding-top: var(--size-3);
+	border-top: 2px solid var(--color-gray);
+	padding-bottom: var(--size-2);
 }
 
 .project-section h2 {
+	font-family: var(--font-1);
 	font-size: var(--size-2);
-	margin-bottom: var(--size-1);
+	font-weight: 600;
+	color: var(--color-black);
+	padding-top: var(--size-1);
+}
+
+.project-section p{
+	font-family: var(--font-1);
+	font-size: var(--size-1);
+	font-weight: 400;
+	color: var(--color-black);
+}
+
+.project-section em{
+	font-style: italic;
+	color: var(--color-drak-gray);
 }
