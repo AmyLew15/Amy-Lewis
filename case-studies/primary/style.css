@@ -98,3 +98,8 @@
 	font-style: italic;
 	color: var(--color-drak-gray);
 }
+
+ul {
+	list-style-type: disc;
+	padding-left: var(--size-1); 
+	}
