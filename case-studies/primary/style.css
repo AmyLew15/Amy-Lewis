@@ -3,21 +3,24 @@
 	padding: calc(var(--header-height) + var(--size-1)) var(--size-1) var(--size-1);
 }
 
+.project-hero{
+	padding-bottom: var(--size-2);
+}
+
 .project-head {
 	padding: var(--size-1) 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 	gap: var(--size-1);
-	border-bottom: 2px solid var(--color-gray);
 }
 
 .project-title {
 	font-family: var(--font-1);
-	font-size: var(--size-3);
+	font-size: var(--size-2);
 	font-weight: 600;
 	line-height: 1;
-	color: var(--color-black);
+	color: var(--color-blue);
 	margin: 0;
 }
 
@@ -48,7 +51,6 @@
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0,1fr));
 	gap: var(--size-1);
-	padding: var(--size-1) 0;
 	align-items: start;
 }
 
@@ -69,13 +71,22 @@
 	font-family: var(--font-2);
 	font-size: var(--nav-size);
 	font-weight: 500;
-	color: var(--color-drak-gray);
-	margin: var(--size-1) 0 0;
+	color: var(--color-dark-gray);
+	margin: 0;
+}
+
+.interviewee,
+.sketches,
+.flow,
+.test {
+	display: grid;
+	gap: var(--size-1);
+	padding: var(--size-1) 0;
+	border-bottom: 1px solid var(--color-gray);
 }
 
 /* ========== PROJECT DETAILS ========== */
 .project-section {
-	border-top: 2px solid var(--color-gray);
 	padding-bottom: var(--size-2);
 }
 
@@ -83,23 +94,54 @@
 	font-family: var(--font-1);
 	font-size: var(--size-2);
 	font-weight: 600;
-	color: var(--color-black);
-	padding-top: var(--size-1);
+	color: var(--color-blue);
+	margin: 0;
+}
+
+.project-section h3 {
+	font-family: var(--font-2);
+	font-size: var(--size-1);
+	font-weight: 400;
+	color: var(--color-dark-gray);
+	margin: 0;
+}
+
+.project-section h4 {
+	font-family: var(--font-2);
+	font-size: var(--nav-size);
+	font-weight: 400;
+	line-height: 1.4;
+	color: var(--color-blue);
+	margin: 0 0 var(--size-0);
 }
 
 .project-section p{
 	font-family: var(--font-1);
 	font-size: var(--size-1);
 	font-weight: 400;
+	line-height: 1.4;
 	color: var(--color-black);
+	max-width: 34ch;
+	margin: 0 0 var(--size-1);
 }
 
 .project-section em{
 	font-style: italic;
-	color: var(--color-drak-gray);
+	color: var(--color-dark-gray);
 }
 
-ul {
+.project-section ul {
 	list-style-type: disc;
 	padding-left: var(--size-1); 
+	margin: 0;
 	}
+
+/* ========== PROJECT PROBLEM ========== */
+/* ========== PROJECT INTERVIEWS ========== */
+.interviewee-name h3{
+	font-family: var(--font-1);
+	font-size: var(--size-1);
+	font-weight: 500;
+	color: var(--color-blue);
+	margin: 0;
+}
