@@ -62,27 +62,26 @@
 			<section class="project-section">
 				<div class="container">
 					<h2>Overview</h2>
-						<div class="project-meta">
+						<dl class="project-meta">
 							<div class="meta-item">
-								<h3 class="project-subhead">School</h3>	
-									<p>Parsons School of Design</p>
+								<dt class="project-subhead">School</dt>	
+									<dd>Parsons School of Design</dd>
 							</div>
 							<div class="meta-item">
-								<h3 class="project-subhead">Duration</h3>	
-									<p>January to May 2025
-										Revised 2026
-									</p>
+								<dt class="project-subhead">Duration</dt>	
+									<dd>January to May 2025</dd>
+									<dd>Revised 2026</dd>
 							</div>
 							<div class="meta-item">
-								<h3 class="project-subhead">Role</h3>	
-									<p>UX Designer</p>
+								<dt class="project-subhead">Role</dt>	
+									<dd>UX Designer</dd>
 							</div>
-						</div>
-						<p>In my neighborhood of Brooklyn, I noticed an increase in interest for the 2025 Mayoral election amoung young people, so I started to wonder what the campaign process looks like in other communities.</p>
-						<p><em>How do people connect on local issues? Why is election coverage limited for local races?? How can we stay politically active on a smaller scale that impacts the big stuff???</em></p>
+						</dl>
+						<p>In my neighborhood of Brooklyn, I noticed an increase in interest for the 2025 Mayoral election among young people, so I started to wonder what the campaign process looks like in other communities.</p>
+						<p><em class="intro-questions">How do people connect on local issues? Why is election coverage limited for local races?? How can we stay politically active on a smaller scale that impacts the big stuff???</em></p>
 
 					<h2>Solution</h2>
-						<p>As the capstone project for my MPS program, I allowed my personal interests in politics guide the premise. From problem discovery to developing high-fidelity mockups, I created an app, Primary, to uplift local elections so voting feels like an unhurried choice rather than an overwhelming chore.</p>
+						<p>For my MPS capstone project, I let my interest in politics guide the premise. From problem discovery to developing high-fidelity mockups, I created an app, Primary, to uplift local elections so voting feels like an unhurried choice rather than an overwhelming chore.</p>
 					 <!-- Add mockup image here -->
 				</div>
 			</section>
@@ -91,9 +90,9 @@
 			<section class="project-section">
 				<div class="container">
 					<h2>Problem</h2>
-						<p>There is a disconnect between potential voters and voter turnout rates for local elections due to communication and visibility issues surrounding important races and issues.</p>
+						<p>There is a disconnect between potential voters and voter turnout rates for local elections due to abandoned opportunities to spotlight local races and a lack of visibility.</p>
 					<h2>Research Questions</h2>
-						<ul>
+						<ul class="research-questions">
 							<li>How do people connect on local issues?</li>
 							<li>How do people prepare for upcoming elections?</li>
 							<li>How can we help people find the most helpful and important voter information?</li>
@@ -103,11 +102,11 @@
 				</div>
 			</section>
 
-		<!--Project Interviews-->
+		<!--User Interviews-->
 			<section class="project-section">
 				<div class="container">
 					<h2>User Interviews</h2>
-					<div class="user interviews">
+					<div class="interviews">
 						<div class="interviewee">
 							<div>
 								 <!-- Add interviewee image here -->
@@ -115,7 +114,7 @@
 							</div>
 							<div class="interviewee-title">
 								<h3 class="interviewee-name">David</h3>
-									<h4>College student, first-time voter, and just moved to a city.</h4>
+									<h4 class="interviewee-desc">College student, first-time voter, and just moved to a city.</h4>
 							</div>
 							<div class="interview-quote">
 								<p>"I want to be more involved in local politics, but I don't know where to start. A lot of websites are confusing and outdated."</p>
@@ -137,7 +136,7 @@
 							</div>
 							<div class="interviewee-title">
 								<h3 class="interviewee-name">Alex</h3>
-									<h4>Manager at a non-profit, community organizer, and worked on campaigns.</h4>
+									<h4 class="interviewee-desc">Manager at a non-profit, community organizer, and worked on campaigns.</h4>
 							</div>
 							<div class="interview-quote">
 								<p>"Having clarity of who is currently running for office and the current issues being worked on, would help me understand how I can be more active."</p>
@@ -159,7 +158,7 @@
 							</div>
 							<div class="interviewee-title">
 								<h3 class="interviewee-name">Ken</h3>
-									<h4>Retired government worker, election volunteer, and has been voting for over 30 years.</h4>
+									<h4 class="interviewee-desc">Retired government employee, election volunteer, and consistent voter for over 30 years.</h4>
 							</div>
 							<div class="interview-quote">
 								<p>"I try to stay on top of upcoming elections, but some are really not advertised at all. Dedicating the time to search through multiple sources is really demanding and not the best use of my time."</p>
@@ -181,34 +180,37 @@
 			<section class="project-section">
 				<div class="container">
 					<h2>Ideation</h2>
-					<div class="sketches">
-						<!-- Add sketch image here -->
-						<h3>Map of election polling places and community centers</h3>
-						<p>Encourage voter turnout by giving people an adjustable map of where they can go vote during local elections.</p>
-					</div>
+					<p>Based on the insights from my user interviews, I organized a sketch session to start developing potential features that could be included in the app to address the needs and pain points of voters.</p>
+					<div class="sketch-gallery">
+						<div class="sketch-card">
+							<!-- Add sketch image here -->
+							<h3>Map of election polling centers</h3>
+								<p>Encourage voter turnout by providing an adjustable map of where people can vote based on their location.</p>
+						</div>
 
-					<div class="sketches">
-						<!-- Add sketch image here -->
-						<h3>Calendar of upcoming elections and events</h3>
-							<p>People can keep up with key dates for what is happening in their communities with a syncable calendar and push notifications.</p>
-					</div>
+						<div class="sketch-card">
+							<!-- Add sketch image here -->
+							<h3>Calendar of upcoming elections and events</h3>
+								<p>Keep up with key dates using a syncable calendar and push notifications.</p>
+						</div>
 
-					<div class="sketches">
-						<!-- Add sketch image here -->
-						<h3>Directory of local representatives and their contact information</h3>
-							<p>Allow people to get to know their representatives by having easy access to their office information, short bio, and current initives they are working on.</p>
-					</div>
+						<div class="sketch-card">
+							<!-- Add sketch image here -->
+							<h3>Directory of local representatives and contact information</h3>
+								<p>Access to office information, a short bio, and current initiatives being worked on.</p>
+						</div>
 
-					<div class="sketches">
-						<!-- Add sketch image here -->
-						<h3>Educational resources about the voting process and local government</h3>
-							<p>One stop for learning about the voting process to give people a brief overview that can help inform their vote.</p>
-					</div>
+						<div class="sketch-card">
+							<!-- Add sketch image here -->
+							<h3>Educational resources about the voting process</h3>
+								<p>One stop for learning about how voting works and frequently asked questions.</p>
+						</div>
 
-					<div class="sketches">
-						<!-- Add sketch image here -->
-						<h3>Personalized voter guide based on user preferences and location</h3>
-							<p>Allow people to practice voting ahead of election day to alleviate any stress.</p>
+						<div class="sketch-card">
+							<!-- Add sketch image here -->
+							<h3>Personalized voter guide based on user preferences and location</h3>
+								<p>Allow people to practice voting ahead of election day to alleviate any stress.</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -227,7 +229,7 @@
 							<h3>Flow 2</h3>
 								<h4>Meet your Representatives</h4>
 									<!-- Add lowfi image here -->
-									<p>My next step was integrating the awareness component. There was a lack of information about current elected officials so I wanted their to be a place users could see who is representing them.</p>
+									<p>My next step was integrating the awareness component. There was a lack of information about current elected officials so I wanted there to be a place users could see who is representing them.</p>
 						</div>
 						<div class="flow">
 							<h3>Flow 3</h3>
@@ -245,7 +247,7 @@
 						<div class="test">
 							<h3>Flow 1</h3>
 								<h4>Voter Guide</h4>
-									<p>I conducted usability testing with five particpants to observe how they interacted within each flow and their experience within the app. Initially, learning about voting was linked with registration in an attempt to streamline the process. However, I found users appreciated the ability to skip learning about voting if they were already familiar but wanted to avoid the registration step to explore more of the app first. This response encouraged me to keep the introduction of Primary brief and build out voter registration as a seperate step.</p>
+									<p>I conducted usability testing with five participants to observe how they interacted within each flow and their experience within the app. Initially, learning about voting was linked with registration in an attempt to streamline the process. However, I found users appreciated the ability to skip learning about voting if they were already familiar but wanted to avoid the registration step to explore more of the app first. This response encouraged me to keep the introduction of Primary brief and build out voter registration as a separate step.</p>
 						</div>
 						<div class="test">
 							<h3>Flow 2</h3>
@@ -264,13 +266,20 @@
 			<section class="project-section">
 				<div class="container">
 					<h2>High Fidelity</h2>
-						<h3>Key Features</h3>
-							<h4>Personalized Voter Guide</h4>
-								<p>Users can create a personalized voter guide based on their preferences and location, which provides them with relevant information about upcoming elections, candidates, and issues.</p>
-							<h4>Directory of Local Representatives</h4>
-								<p>Users can access a directory of their local representatives, including contact information, biographies, and current initiatives they are working on, to help them stay informed and engaged with their local government.</p>
-							<h4>Practice Ballot</h4>
-								<p>Users can practice voting ahead of election day with a practice ballot that simulates the actual voting experience, allowing them to familiarize themselves with the process and make informed decisions on election day.</p>
+						<div class="feature-list">
+							<div class="feature">
+								<h3>Personalized Voter Guide</h3>
+									<p>Users can create a personalized voter guide based on their preferences and location, which provides them with relevant information about upcoming elections, candidates, and issues.</p>
+							</div>
+							<div class="feature">
+								<h3>Directory of Local Representatives</h3>
+									<p>Users can access a directory of their local representatives, including contact information, biographies, and current initiatives they are working on, to help them stay informed and engaged with their local government.</p>
+							</div>
+							<div class="feature">
+								<h3>Practice Ballot</h3>
+									<p>Users can practice voting ahead of election day with a practice ballot that simulates the actual voting experience, allowing them to familiarize themselves with the process and make informed decisions on election day.</p>
+							</div>	
+						</div>
 				</div>
 			</section>
 		</main>

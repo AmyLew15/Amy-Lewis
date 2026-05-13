@@ -1,10 +1,50 @@
+/* ====== CASE STYLES ====== */
+.project-section {
+	padding-bottom: var(--size-2);
+}
+
+.project-page h2 {
+	font-family: var(--font-1);
+	font-size: var(--size-2);
+	font-weight: 600;
+	color: var(--color-blue);
+	margin: 0;
+}
+
+.project-page h3 {
+	font-family: var(--font-2);
+	font-size: var(--size-1);
+	font-weight: 400;
+	color: var(--color-blue);
+	margin: 0;
+}
+
+.project-page h4 {
+	font-family: var(--font-1);
+	font-size: var(--size-1);
+	font-weight: 400;
+	line-height: 1.4;
+	color: var(--color-blue);
+	margin: 0 0 var(--size-0);
+}
+
+.project-page p{
+	font-family: var(--font-1);
+	font-size: var(--size-1);
+	font-weight: 400;
+	line-height: 1.6;
+	color: var(--color-black);
+	max-width: 34ch;
+	text-wrap: pretty;
+}
+
 /* ========== PRIMARY HERO ========== */
 .project-page {
 	padding: calc(var(--header-height) + var(--size-1)) var(--size-1) var(--size-1);
 }
 
 .project-hero{
-	padding-bottom: var(--size-2);
+	margin-bottom: var(--size-3);
 }
 
 .project-head {
@@ -25,9 +65,9 @@
 }
 
 .case-close {
-	font-family: var(--font-2);
+	font-family: var(--font-1);
 	font-size: var(--size-1);
-	font-weight: 500;
+	font-weight: 400;
 	color: var(--color-blue);
 	background: var(--color-beige);
 	padding: var(--size-0);
@@ -37,26 +77,20 @@
 }
 
 .project-intro {
-	padding: 0;
-}
-
-.project-intro p {
 	font-size: var(--size-1);
 	line-height: 1.6;
 	max-width: 32ch;
+	padding: 0;
 	margin: 0;
 }
 
+/* ========== PROJECT DETAILS ========== */
 .project-meta {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0,1fr));
 	gap: var(--size-1);
 	align-items: start;
-}
-
-.project-meta p {
-	margin: 0;
-	line-height: 1.4;
+	padding-bottom: var(--size-1);
 }
 
 .meta-item {
@@ -67,81 +101,206 @@
 	text-align: left;
 }
 
-.project-subhead {
-	font-family: var(--font-2);
+.project-subhead{
+	font-family: var(--font-1);
 	font-size: var(--nav-size);
-	font-weight: 500;
-	color: var(--color-dark-gray);
+	font-weight: 400;
+	color: var(--color-blue);
 	margin: 0;
 }
 
-.interviewee,
-.sketches,
-.flow,
-.test {
+.project-meta dd {
+	margin: 0;
+	line-height: 1.4;
+}
+
+.intro-questions{
+	font-style: italic;
+	color: var(--color-dark-gray);
+	display: block;
+	margin-bottom: var(--size-3);
+}
+
+/* ========== PROJECT PROBLEM ========== */
+.research-questions {
+	list-style-type: disc;
+	padding-left: var(--size-1);
+	margin: 0;
+}
+
+.research-questions li{
+	margin-bottom: var(--size-0);
+	line-height: 1.6;
+}
+
+/* ========== USER INTERVIEWS ========== */
+.interviews{
 	display: grid;
 	gap: var(--size-1);
-	padding: var(--size-1) 0;
+}
+
+.interviewee {
+	display: grid;
+	gap: var(--size-1);
+	padding: var(--size-1);
+	background: var(--color-beige);
+	border-radius: var(--size-0);
+	border-bottom: none;
+}
+
+/*.interviewee-photo {
+	width: 100%;
+	max-width: 120px;
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: var(--size-0);
+}*/
+
+.interviewee-title {
+	display: grid;
+	gap: 4px;
+}
+
+.interviewee-name{
+	font-family: var(--font-1);
+	font-size: calc(1.2*var(--size-1));
+	font-weight: 600;
+	color: var(--color-blue);
+	margin: var(--size-0) 0;
+}
+
+.interviewee-desc {
+	font-family: var(--font-1);
+	font-size: var(--size-1);
+	font-weight: 400;
+	color: var(--color-black);
+}
+
+.interview-quote p {
+	font-family: var(--font-1);
+	font-style: italic;
+	color: var(--color-dark-gray);
+	text-wrap: pretty;
+}
+
+.interview-insight,
+.interview-hmw {
+	display: grid;
+	gap: 4px;
+}
+
+/* ========== PROJECT IDEATION ========== */
+.sketch-gallery {
+	display: grid;
+	gap: var(--size-1);
+}
+
+.sketch-card {
+	display: grid;
+	gap: var(--size-1);
+	padding: var(--size-1);
+	background: var(--color-beige);
+	border-radius: var(--size-0);
+}
+
+.sketch-card h3 {
+	font-family: var(--font-1);
+	font-size: var(--size-1);
+	font-weight: 400;
+	line-height: 1.4;
+	text-wrap: pretty;
+	color: var(--color-blue);
+	margin: 0;
+}
+
+.sketch-card p {
+	margin: 0;
+}
+
+/* ========== LOW FIDELITY ========== */
+.flow {
+	display: grid;
+	gap: var(--size-0);
+	padding: var(--size-2) 0;
 	border-bottom: 1px solid var(--color-gray);
 }
 
-/* ========== PROJECT DETAILS ========== */
-.project-section {
-	padding-bottom: var(--size-2);
-}
-
-.project-section h2 {
-	font-family: var(--font-1);
-	font-size: var(--size-2);
-	font-weight: 600;
-	color: var(--color-blue);
-	margin: 0;
-}
-
-.project-section h3 {
+.flow h3 {
 	font-family: var(--font-2);
-	font-size: var(--size-1);
-	font-weight: 400;
-	color: var(--color-dark-gray);
-	margin: 0;
-}
-
-.project-section h4 {
-	font-family: var(--font-2);
-	font-size: var(--nav-size);
-	font-weight: 400;
-	line-height: 1.4;
-	color: var(--color-blue);
-	margin: 0 0 var(--size-0);
-}
-
-.project-section p{
-	font-family: var(--font-1);
-	font-size: var(--size-1);
-	font-weight: 400;
-	line-height: 1.4;
-	color: var(--color-black);
-	max-width: 34ch;
-	margin: 0 0 var(--size-1);
-}
-
-.project-section em{
-	font-style: italic;
-	color: var(--color-dark-gray);
-}
-
-.project-section ul {
-	list-style-type: disc;
-	padding-left: var(--size-1); 
-	margin: 0;
-	}
-
-/* ========== PROJECT PROBLEM ========== */
-/* ========== PROJECT INTERVIEWS ========== */
-.interviewee-name h3{
-	font-family: var(--font-1);
 	font-size: var(--size-1);
 	font-weight: 500;
+	color: var(--color-black);
+	margin: 0;
+	background: var(--color-gray);
+	padding-inline: calc(.5*var(--size-0));
+	display: inline-flex;
+}
+
+.flow h4 {
+	font-family: var(--font-1);
+	font-size: calc(1.25 * var(--size-1));
+	font-weight: 600;
+	line-height: 1.3;
 	color: var(--color-blue);
+	margin: 0;
+}
+
+.flow p {
+	text-wrap: pretty;
+	padding-top: var(--size-0);
+	margin: 0;
+}
+
+/* ========== PROJECT TESTING ========== */
+.test {
+	display: grid;
+	gap: var(--size-0);
+	padding: var(--size-2) 0;
+	border-bottom: 1px solid var(--color-gray);
+}
+
+.test h3 {
+	font-family: var(--font-2);
+	font-size: var(--size-1);
+	font-weight: 500;
+	color: var(--color-black);
+	margin: 0;
+}
+
+.test h4 {
+	font-family: var(--font-1);
+	font-size: calc(1.25 * var(--size-1));
+	font-weight: 600;
+	line-height: 1.3;
+	color: var(--color-blue);
+	margin: 0;
+}
+
+.test p {
+	text-wrap: pretty;
+	padding-top: var(--size-0);
+	margin: 0;
+}
+
+/* ========== PROJECT FINAL ========== */
+.feature-list {
+	display: grid;
+	gap: var(--size-2);
+}
+
+.feature {
+	font-family: var(--font-1);
+	font-size: var(--size-1);
+	font-weight: 400;
+	line-height: 1.4;
+	color: var(--color-blue);
+	margin: 0;
+	display: grid;
+	gap: var(--size-0);
+	padding-bottom: var(--size-0);
+	border-bottom: 1px solid var(--color-gray);
+}
+
+.feature p {
 	margin: 0;
 }
