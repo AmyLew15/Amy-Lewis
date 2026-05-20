@@ -64,7 +64,7 @@ main {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 10px var(--size-0);
-		padding: 0;
+		padding: 0 0 var(--size-1) 0;
 		margin: 0;
 }
 
@@ -220,7 +220,7 @@ main {
 /* ========== CASE STUDIES ========== */
 .portfolio-container {
 	min-height: 100vh;
-	padding-top: var(--size-3);
+	padding-top: var(--size-1);
 }
 
 h2.section-title {
@@ -230,7 +230,7 @@ h2.section-title {
 	color: var(--color-blue);
 	padding-inline: var(--size-1);
 	padding-bottom: var(--size-0);
-	margin: 0 0 var(--size-2) 0;
+	margin: 0 0;
 	border-bottom: 2px solid var(--color-blue);
 }
 
@@ -250,7 +250,7 @@ h2.section-title {
 .case-head {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	gap: var(--size-1);
 }
 
@@ -290,13 +290,12 @@ h2.section-title {
 /* ======== COOL STUFF ======== */
 .cool-container {
 	min-height: auto;
-	padding-top: var(--size-3);
+	padding-top: var(--size-1);
 }
-
 .cool-stuff {
 	display: grid;
-	gap: var(--size-1);
 	padding-inline: var(--size-1);
+	gap: var(--size-1);
 }
 
 .project-card {
@@ -309,7 +308,7 @@ h2.section-title {
 .project-head {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	gap: var(--size-1);
 }
 
@@ -354,7 +353,7 @@ h2.section-title {
 /* ======== CONNECT ======== */
 .connect-container {
 	min-height: auto;
-	padding-top: var(--size-3);
+	padding-top: var(--size-1);
 }
 
 .connect-head {
@@ -362,7 +361,7 @@ h2.section-title {
 	justify-content: space-between;
 	align-items: center;
 	padding-inline: var(--size-1);
-	margin-bottom: var(--size-1);
+	padding-top: var(--size-1);
 	gap: var(--size-1);
 }
 
@@ -404,7 +403,7 @@ h2.section-title {
 /* ========== FOOTER ========== */
 footer{
 	margin: 0 auto;
-	padding: var(--size-1);
+	padding: var(--size-2)var(--size-1);
 	border-top: 2px solid var(--color-gray);
 }
 
