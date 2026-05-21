@@ -48,10 +48,10 @@ p{
 }
 
 .project-head {
-	padding: var(--size-1) 0;
+	padding: var(--size-1) 0 0 0;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	gap: var(--size-1);
 }
 
