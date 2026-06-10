@@ -48,20 +48,11 @@ p{
 }
 
 .project-head {
-	padding: var(--size-1) 0 0 0;
+	padding-top: var(--size-1);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: var(--size-1);
-}
-
-.project-title {
-	font-family: var(--font-1);
-	font-size: var(--size-2);
-	font-weight: 600;
-	line-height: 1;
-	color: var(--color-blue);
-	margin: 0;
 }
 
 .case-close {
@@ -145,10 +136,9 @@ p{
 	padding: var(--size-1);
 	background: var(--color-beige);
 	border-radius: var(--size-0);
-	border-bottom: none;
 }
 
-/*.interviewee-photo {
+/*.company-photo {
 	width: 100%;
 	max-width: 120px;
 	aspect-ratio: 1;
@@ -156,7 +146,7 @@ p{
 	border-radius: var(--size-0);
 }*/
 
-.company-title {
+.company-title, .company-insight {
 	display: grid;
 	gap: 4px;
 }
@@ -177,8 +167,7 @@ p{
 	text-wrap: pretty;
 }
 
-.company-insight h4,
-.company-hmw h4 {
+.company-insight h4 {
 	font-family: var(--font-1);
 	font-size: var(--size-1);
 	font-weight: 500;
@@ -191,15 +180,10 @@ p{
 	padding-left: var(--size-1);
 	margin: var(--size-0) 0;
 	line-height: 1.6;
+	text-wrap: pretty;
 }
 
-.company-insight,
-.company-hmw {
-	display: grid;
-	gap: 4px;
-}
-
-/* ========== PROJECT INSIGHTS ========== */
+/* ========== KEY INSIGHTS ========== */
 .key-insight {
 	list-style-type: disc;
 	padding-left: var(--size-1);
@@ -246,38 +230,16 @@ p{
 	margin: 0;
 }
 
-/* ========== PROJECT TESTING ========== */
-.test {
+/* ========== PROJECT BRANDING ========== */
+.branding {
 	display: grid;
 	gap: var(--size-0);
 	padding: var(--size-2) 0;
 	border-bottom: 1px solid var(--color-gray);
 }
 
-.test h3 {
-	font-family: var(--font-2);
-	font-size: var(--size-1);
-	font-weight: 500;
-	color: var(--color-black);
-	margin: 0;
-	background: var(--color-gray);
-	padding-inline: calc(.5*var(--size-0));
-	display: inline-flex;
-	justify-self: start;
-}
-
-.test h4 {
-	font-family: var(--font-1);
-	font-size: calc(1.25 * var(--size-1));
-	font-weight: 600;
-	line-height: 1.3;
-	color: var(--color-blue);
-	margin: 0;
-}
-
-.test p {
+.branding p {
 	text-wrap: pretty;
-	padding-top: var(--size-0);
 	margin: 0;
 }
 
@@ -299,7 +261,6 @@ p{
 }
 
 .flow:last-child,
-.test:last-child,
 .feature:last-child {
 	border-bottom: none;
 }
