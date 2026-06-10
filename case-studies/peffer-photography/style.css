@@ -133,7 +133,7 @@ p{
 	line-height: 1.6;
 }
 
-/* ========== USER INTERVIEWS ========== */
+/* ========== MARKET ANALYSIS ========== */
 .analysis {
 	display: grid;
 	gap: var(--size-1);
@@ -199,32 +199,16 @@ p{
 	gap: 4px;
 }
 
-/* ========== PROJECT IDEATION ========== */
-.sketch-gallery {
-	display: grid;
-	gap: var(--size-1);
-}
-
-.sketch-card {
-	display: grid;
-	gap: var(--size-1);
-	padding: var(--size-1);
-	background: var(--color-beige);
-	border-radius: var(--size-0);
-}
-
-.sketch-card h3 {
-	font-family: var(--font-1);
-	font-size: var(--size-1);
-	font-weight: 400;
-	line-height: 1.4;
-	text-wrap: pretty;
-	color: var(--color-blue);
+/* ========== PROJECT INSIGHTS ========== */
+.key-insight {
+	list-style-type: disc;
+	padding-left: var(--size-1);
 	margin: 0;
 }
 
-.sketch-card p {
-	margin: 0;
+.key-insight li{
+	margin-bottom: var(--size-0);
+	line-height: 1.6;
 }
 
 /* ========== LOW FIDELITY ========== */
