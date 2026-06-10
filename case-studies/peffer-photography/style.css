@@ -134,12 +134,12 @@ p{
 }
 
 /* ========== USER INTERVIEWS ========== */
-.interviews{
+.analysis {
 	display: grid;
 	gap: var(--size-1);
 }
 
-.interviewee {
+.company {
 	display: grid;
 	gap: var(--size-1);
 	padding: var(--size-1);
@@ -156,12 +156,12 @@ p{
 	border-radius: var(--size-0);
 }*/
 
-.interviewee-title {
+.company-title {
 	display: grid;
 	gap: 4px;
 }
 
-.interviewee-name{
+.company-name{
 	font-family: var(--font-1);
 	font-size: calc(1.2*var(--size-1));
 	font-weight: 600;
@@ -169,22 +169,16 @@ p{
 	margin: var(--size-0) 0;
 }
 
-.interviewee-desc {
+.company-desc {
 	font-family: var(--font-1);
 	font-size: var(--size-1);
 	font-weight: 400;
-	color: var(--color-black);
-}
-
-.interview-quote p{
-	font-family: var(--font-1);
-	font-style: italic;
 	color: var(--color-dark-gray);
 	text-wrap: pretty;
 }
 
-.interview-insight h4,
-.interview-hmw h4 {
+.company-insight h4,
+.company-hmw h4 {
 	font-family: var(--font-1);
 	font-size: var(--size-1);
 	font-weight: 500;
@@ -192,8 +186,15 @@ p{
 	margin: 0;
 }
 
-.interview-insight,
-.interview-hmw {
+.company-insight-list {
+	list-style-type: disc;
+	padding-left: var(--size-1);
+	margin: var(--size-0) 0;
+	line-height: 1.6;
+}
+
+.company-insight,
+.company-hmw {
 	display: grid;
 	gap: 4px;
 }
