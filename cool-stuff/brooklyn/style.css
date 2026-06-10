@@ -3,7 +3,7 @@
 	padding-bottom: var(--size-2);
 }
 
-.case-title {
+.project-title {
 	font-family: var(--font-1);
 	font-size: var(--size-2);
 	font-weight: 600;
@@ -11,7 +11,7 @@
 	margin: 0;
 }
 
-.case-section {
+.section-heading {
 	font-family: var(--font-1);
 	font-size: var(--size-2);
 	font-weight: 600;
@@ -23,7 +23,7 @@
 h3{
 	font-family: var(--font-1);
 	font-size: var(--size-1);
-	font-weight: 500;
+	font-weight: 600;
 	color: var(--color-blue);
 	margin: 0;
 }
@@ -64,7 +64,7 @@ p{
 	margin: 0;
 }
 
-.case-close {
+.project-close {
 	font-family: var(--font-1);
 	font-size: var(--nav-size);
 	font-weight: 400;
@@ -82,5 +82,34 @@ p{
 	max-width: 32ch;
 	padding: 0;
 	margin: 0;
+}
+
+.project-meta {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0,1fr));
+	gap: var(--size-1);
+	align-items: start;
+	padding-bottom: var(--size-1);
+}
+
+.meta-item {
+	display: grid;
+	gap: 4px;
+	align-content: start;
+	justify-items: start;
+	text-align: left;
+}
+
+.project-subhead{
+	font-family: var(--font-1);
+	font-size: var(--nav-size);
+	font-weight: 400;
+	color: var(--color-blue);
+	margin: 0;
+}
+
+.project-meta dd {
+	margin: 0;
+	line-height: 1.4;
 }
 

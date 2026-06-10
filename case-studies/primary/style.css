@@ -84,7 +84,7 @@ p{
 	margin: 0;
 }
 
-/* ========== PROJECT DETAILS ========== */
+/* ========== DETAILS ========== */
 .project-meta {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0,1fr));
@@ -121,7 +121,7 @@ p{
 	margin-bottom: var(--size-3);
 }
 
-/* ========== PROJECT PROBLEM ========== */
+/* ========== PROBLEM ========== */
 .research-questions {
 	list-style-type: disc;
 	padding-left: var(--size-1);
@@ -198,7 +198,7 @@ p{
 	gap: 4px;
 }
 
-/* ========== PROJECT IDEATION ========== */
+/* ========== IDEATION ========== */
 .sketch-gallery {
 	display: grid;
 	gap: var(--size-1);
@@ -261,7 +261,7 @@ p{
 	margin: 0;
 }
 
-/* ========== PROJECT TESTING ========== */
+/* ========== TESTING ========== */
 .test {
 	display: grid;
 	gap: var(--size-0);
@@ -296,7 +296,7 @@ p{
 	margin: 0;
 }
 
-/* ========== PROJECT FINAL ========== */
+/* ========== FINAL ========== */
 .feature-list {
 	display: grid;
 	gap: var(--size-2);
