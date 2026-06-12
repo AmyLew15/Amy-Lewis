@@ -247,6 +247,10 @@ h2.section-title {
 	border-bottom: 2px solid var(--color-gray);
 }
 
+#primary, #spotify, #peffer-photography{
+	scroll-margin-top: var(--scroll-offset);
+}
+
 .case-head {
 	display: flex;
 	justify-content: space-between;
@@ -303,6 +307,10 @@ h2.section-title {
 	gap: var(--size-1);
 	padding: var(--size-1) 0;
 	border-bottom: 2px solid var(--color-gray);
+}
+
+#brooklyn, #pharmpro, #sheep-festival, #sketchbook {
+	scroll-margin-top: var(--scroll-offset);
 }
 
 .project-head {
