@@ -309,7 +309,7 @@ h2.section-title {
 	border-bottom: 2px solid var(--color-gray);
 }
 
-#brooklyn, #pharmpro, #sheep-festival, #sketchbook {
+#brooklyn-museum, #pharmpro, #sheep-festival, #sketchbook {
 	scroll-margin-top: var(--scroll-offset);
 }
 
@@ -399,6 +399,16 @@ h2.section-title {
 	text-decoration: none;
 }
 
+.contact-button{
+	transition: background-color 180ms ease,
+	color 180ms ease;
+}
+
+.contact-button.copied{
+	background: var(--color-blue);
+	color: var(--color-white);
+}
+
 .connect-container p {
 	font-size: var(--size-1);
 	line-height: 1.6;
@@ -406,6 +416,7 @@ h2.section-title {
 	max-width: 34ch;
 	padding-inline: var(--size-1);
 	margin: 0 0 var(--size-1);
+	text-wrap: pretty;
 }
 
 /* ========== FOOTER ========== */
