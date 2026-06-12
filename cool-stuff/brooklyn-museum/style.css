@@ -1,14 +1,6 @@
-/* ====== CASE STYLES ====== */
+/* ====== PROJECT STYLES ====== */
 .project-section {
 	padding-bottom: var(--size-2);
-}
-
-.project-title {
-	font-family: var(--font-1);
-	font-size: var(--size-2);
-	font-weight: 600;
-	color: var(--color-blue);
-	margin: 0;
 }
 
 .section-heading {
@@ -20,25 +12,7 @@
 	margin: 0;
 }
 
-h3{
-	font-family: var(--font-1);
-	font-size: var(--size-1);
-	font-weight: 600;
-	color: var(--color-blue);
-	margin: 0;
-}
-
-p{
-	font-family: var(--font-1);
-	font-size: var(--size-1);
-	font-weight: 400;
-	line-height: 1.6;
-	color: var(--color-black);
-	max-width: 34ch;
-	text-wrap: pretty;
-}
-
-/* ========== PRIMARY HERO ========== */
+/* ========== PROJECT HERO ========== */
 .project-page {
 	padding: calc(var(--header-height) + var(--size-1)) var(--size-1) var(--size-1);
 }
@@ -113,3 +87,40 @@ p{
 	line-height: 1.4;
 }
 
+/* ========== PROJECT GALLERY ========== */
+
+.project-gallery {
+	display: grid;
+	gap: var(--size-1);
+}
+
+.project-gallery figure {
+	margin: 0;
+}
+
+.project-gallery img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: var(--size-0);
+}
+
+/* ========== PROJECT CONCEPT ========== */
+
+.project-concept {
+	font-family: var(--font-1);
+	font-size: var(--size-2);
+	font-weight: 600;
+	color: var(--color-blue);
+	margin: 0;
+}
+
+.project-page p {
+	font-family: var(--font-1);
+	font-size: var(--size-1);
+	font-weight: 400;
+	line-height: 1.6;
+	color: var(--color-black);
+	max-width: 34ch;
+	text-wrap: pretty;
+}

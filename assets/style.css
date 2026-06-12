@@ -59,7 +59,7 @@ main {
 	scroll-margin-top: var(--scroll-offset);
 }
 
-.project-tags {
+.card-tags {
 		list-style: none;
 		display: flex;
 		flex-wrap: wrap;
@@ -302,7 +302,7 @@ h2.section-title {
 	gap: var(--size-1);
 }
 
-.project-card {
+.cool-card {
 	display: grid;
 	gap: var(--size-1);
 	padding: var(--size-1) 0;
@@ -313,14 +313,14 @@ h2.section-title {
 	scroll-margin-top: var(--scroll-offset);
 }
 
-.project-head {
+.cool-heading {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: var(--size-1);
 }
 
-.project-title {
+.cool-title {
 	font-family: var(--font-1);
 	font-size: calc(1.5 * var(--size-1));
 	font-weight: 600;
@@ -329,7 +329,7 @@ h2.section-title {
 	margin: 0;
 }
 
-.project-open {
+.cool-open {
 	font-family: var(--font-1);
 	font-size: var(--nav-size);
 	font-weight: 500;
@@ -341,11 +341,11 @@ h2.section-title {
 	white-space: nowrap;
 }
 
-.project-open:active {
+.cool-open:active {
 	transform: translateY(1px);
 }
 
-.project-description {
+.cool-description {
 	font-size: var(--size-1);
 	line-height: 1.5;
 	text-wrap: pretty;
@@ -354,7 +354,7 @@ h2.section-title {
 }
 
 .case-card:last-child,
-.project-card:last-child{
+.cool-card:last-child{
 	border-bottom: none;
 }
 
@@ -364,7 +364,7 @@ h2.section-title {
 	padding-top: var(--size-1);
 }
 
-.connect-head {
+.connect-heading {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -438,7 +438,7 @@ footer p{
 	font-size: var(--nav-size);
 	font-weight: 400;
 	color: var(--color-black);
-	margin-top: calc(0.5 * var(--size-0)) 0 0;
+	margin: calc(0.5 * var(--size-0)) 0 0;
 }
 
 /* ========== RESPONSIVE ========== */
