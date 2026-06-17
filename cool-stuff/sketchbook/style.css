@@ -88,25 +88,47 @@
 }
 
 /* ========== PROJECT GALLERY ========== */
-
 .project-gallery {
-	display: grid;
+	display: flex;
+	align-items: flex-start;
 	gap: var(--size-1);
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+	padding-bottom: var(--size-1);
 }
 
-.project-gallery figure {
+.gallery-slide {
+	position: relative;
+	flex: 0 0 92%;
 	margin: 0;
+	scroll-snap-align: start;
+	border-radius: var(--size-0);
+	overflow: hidden;
 }
 
-.project-gallery img {
+.gallery-slide img {
 	display: block;
 	width: 100%;
-	height: auto;
-	border-radius: var(--size-0);
+	height: 450px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.gallery-slide figcaption {
+	position: absolute;
+	right: var(--size-0);
+	bottom: var(--size-0);
+	font-family: var(--font-2);
+	font-size: var(--nav-size);
+	font-weight: 500;
+	color: var(--color-black);
+	background: var(--color-gray);
+	padding-inline: calc(.5*var(--size-0));
+	line-height: 1.4;
 }
 
 /* ========== PROJECT CONCEPT ========== */
-
 .project-concept {
 	font-family: var(--font-1);
 	font-size: var(--size-2);
