@@ -284,7 +284,6 @@ p{
 
 .flow p {
 	text-wrap: pretty;
-	padding-top: var(--size-0);
 	margin: 0;
 }
 
