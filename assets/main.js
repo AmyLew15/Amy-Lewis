@@ -7,6 +7,24 @@ window.addEventListener("scroll", setScrolled, { passive: true });
 window.addEventListener("resize", setScrolled);
 setScrolled();
 
+const introReveal = document.querySelector(".intro-reveal");
+
+if (introReveal) {
+	const desktop = window.matchMedia("(min-width: 720px)");
+
+	introReveal.addEventListener("mouseenter", () => {
+		if (desktop.matches) {
+			introReveal.open = true;
+		}
+	});
+
+	introReveal.addEventListener("mouseleave", () => {
+		if (desktop.matches) {
+			introReveal.open = false;
+		}
+	});
+};
+
 const emailButton = document.getElementById("copy-email");
 
 emailButton.addEventListener("click", (event) => {
