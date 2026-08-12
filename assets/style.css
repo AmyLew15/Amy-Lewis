@@ -589,6 +589,10 @@ main {
 .intro-short:hover {
 	background: var(--color-gray);
 }
+.portfolio-container, .card-tags{
+	min-height: auto;
+	padding-top: var(--size-1);
+}
 
 /* ========== CASE STUDIES ========== */
 h2.section-title {
