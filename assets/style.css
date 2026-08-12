@@ -808,6 +808,10 @@ h2.section-title {
 	transform: translateX(calc(34ch + var(--size-2)));
 }
 
+.footer-row a:hover {
+		background: var(--color-gray);
+	}
+
 .connect-services {
 	grid-column: 3;
 	grid-row: 3 / span 2;
