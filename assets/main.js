@@ -1,5 +1,5 @@
 const setScrolled = () => {
-	const isDesktop = window.matchMedia("(min-width: 721px)").matches;
+	const isDesktop = window.matchMedia("(min-width: 720px)").matches;
 	document.body.classList.toggle("is-scrolled", isDesktop && window.scrollY > 12);
 };
 
